@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 500;
+}
+
+.drop-down-parent {
+    position: relative;
+}
+
+
+.drop-link {
+    background-color: white;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.drop-down {
+    background-color: white;
+    display: none !important;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    padding: 10px 0;
+    border: 1px solid black;
+    /* left: -1; */
+    /* top: -1; */
+}
+
+.drop-down-parent:hover .drop-down {
+    display: block !important;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: rgb(217, 243, 243);
+}
+
+/* Slider css */
+
+.slider {
+    width: 100vw;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.frame {
+    background-color: aliceblue;
+    width: 700px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.slides-wrapper {
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    transform: translateX(0px);
+    transition: transform 1000ms ease-in-out;
+}
+
+.slide {
+    box-sizing: border-box;
+    height: 100%;
+    width: 700px;
+    background-color: azure;
+    border: 20px solid grey;
+}
+
+.left {
+    position: absolute;
+    left: 60px;
+    height: 100%;
+    background-color: aqua;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    position: absolute;
+    right: 60px;
+    height: 100%;
+    background-color: aqua;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
