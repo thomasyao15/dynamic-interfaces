@@ -98,9 +98,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .right {
+    cursor: pointer;
     position: absolute;
     right: 60px;
     height: 100%;
