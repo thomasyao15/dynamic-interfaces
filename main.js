@@ -32,3 +32,6 @@ class Slider {
 
 document.querySelector(".right").addEventListener("click", Slider.moveRight);
 document.querySelector(".left").addEventListener("click", Slider.moveLeft);
+
+
+setInterval(Slider.moveRight, 5000)
